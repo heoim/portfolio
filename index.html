@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <!--Abril Fatface -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+    </style>
 
     <!-- slick slide -->
     <script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
@@ -19,12 +23,12 @@
   </head>
   <body>
     <!-- top -->
-    <button class="totop"><i class="fa-solid fa-chevron-up top"></i></button>
+    <button class="totop" onclick="window.scrollTo(0,0);"><i class="fa-solid fa-chevron-up top"></i></button>
     
     <header>
       <div class="inner">
         <ul class="main_menu">
-          <li><a href="#top">HOME</a></li>
+          <li><a href="javascript:window.scrollTo(0,0);">HOME</a></li>
           <li>
             <a href="javascript:void(0)" class="about">ABOUT ME</a>
             <ul class="sub_menu">
@@ -64,7 +68,7 @@
     <!-- section01 wave -->
     <section class="sect01" id="sect01">
       <div class="inner flex">
-        <h1>Portfolio</h1>
+        <h1 class="shine">Portfolio</h1>
       </div>
       <!--Waves Container-->
       <div>
@@ -91,7 +95,7 @@
         <input type="radio" name="slide" id="slide01" value="slide01" checked /><label for="slide01" class="under_line">Sidmool</label>
         <input type="radio" name="slide" id="slide02" value="slide02" /><label for="slide02" class="under_line">Visit JEJU</label>
         <input type="radio" name="slide" id="slide03" value="slide04" /><label for="slide03" class="under_line">The Devil Wears PRADA</label>
-        <input type="radio" name="slide" id="slide04" value="slide03" /><label for="slide04" class="under_line">Solar</label>
+        <input type="radio" name="slide" id="slide04" value="slide03" /><label for="slide04" class="under_line">SLT</label>
         <input type="radio" name="slide" id="slide05" value="slide05" /><label for="slide05" class="under_line">Norang Chicken</label>
 
         <div class="slidewrap">
@@ -447,12 +451,12 @@
 
     <!-- sect04 -->
     <section class="sect04" id="sect04">
-      <div class="blind">
-        <h3>준비중입니다....</h3>
-      </div>
       <div class="inner">
         <h3>WEB DEVELOPMENT</h3>
         <div class="dev_sect01">
+          <div class="blind">
+            <h3>준비중입니다....</h3>
+          </div>
           <!-- <h4>진상테스트</h4> -->
           <div class="center_line00">
             <div class="center_line11">

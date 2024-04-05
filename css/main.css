@@ -15,6 +15,9 @@
   font-weight: normal;
   font-style: normal;
 }
+/* Abril Fatface */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
 
 * {
   margin: 0;
@@ -238,15 +241,45 @@ section.sect01 {
   transition: 0.5s;
   padding-top: 44.3vh;
 }
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .sect01 h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Abril Fatface", serif;
   /* font-style: italic; */
   font-size: 50px;
   font-weight: 700;
   transition: 0.5s;
   color: #333;
-  text-shadow: 0px 0px 10px #000;
+  /* text-shadow: 0px 0px 10px #ddd; */
 }
+.shine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 12px 48px;
+  /* color: #f8f6e7; */
+  background: linear-gradient(to right, #141414 0, white 10%, #2b2b2b 20%);
+  
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+}
+@keyframes shine {
+  0% {
+    background-position: 0;}
+  60% {
+    background-position: 300px;}
+  100% {
+    background-position: 300px;}
+}
+
 .flex {
   /*Flexbox for containers*/
   display: flex;
@@ -689,30 +722,31 @@ swiper-slide img {
 /* ========== sect04 ========== */
 .sect04 {
   padding-bottom: 50px;
-  position: relative;
-}
-.sect04 .blind {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 55%;
-  left: 50%;
-  z-index: 1;
-  width: 83%;
-  height: 80%;
-  background-color: #f9f9f9;
-}
-.sect04 .blind h3 {
-  padding: 20%;
-  text-align: center;
+  /* position: relative; */
 }
 .sect04 .inner {
   overflow: hidden;
 }
 .sect04 .inner .dev_sect01 {
+  position: relative;
 }
 .sect04 .inner .dev_sect01 h4 {
   font-weight: 700;
   padding: 20px;
+}
+.sect04 .inner .dev_sect01 .blind {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+}
+.sect04 .inner .blind h3 {
+  padding: 20%;
+  text-align: center;
 }
 .sect04 .inner .dev_sect01 .center_line00 {
   box-sizing: border-box;
