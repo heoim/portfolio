@@ -1,0 +1,475 @@
+@charset "utf-8";
+
+/* 수트 */
+@font-face {
+  font-family: "SUIT-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+div,
+header,
+p,
+a,
+ul,
+li,
+section,
+footer {
+  /* outline: 1px dotted red; */
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  font-family: "SUIT-Regular";
+  font-size: 16px;
+  color: #333;
+}
+.wrap {
+  width: 100%;
+  /* height: 100%; */
+}
+.inner {
+  width: 1000px;
+  margin: 0 auto;
+  /* outline: 5px dotted blue; */
+  overflow: hidden;
+}
+
+/* header  */
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #f6f6f6bb;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+}
+header .inner {
+  display: flex;
+  justify-content: space-between;
+}
+header .logo {
+  width: 75px;
+  padding: 0 50px;
+}
+header .logo p a {
+  display: block;
+  width: 75px;
+  height: 50px;
+  background-image: url(../img/devil-logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+header nav {
+  width: 60%;
+  height: 50px;
+}
+header nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: right;
+}
+header nav ul li a {
+  display: block;
+  padding: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  transition: 0.5s;
+}
+header nav ul li a:hover {
+  /* text-shadow: 0 0 5px brown; */
+  color: brown;
+}
+
+/* slide sect01 */
+.sect01 {
+  width: 1280px;
+  height: 600px;
+  /* margin-top: 50px; */
+  position: relative;
+  /* overflow: hidden; */
+  margin: 50px auto 0;
+  /* background-color: aqua; */
+}
+.sect01 swiper-container.slide {
+  margin: 0 auto;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  background-color: antiquewhite;
+}
+.sect01 swiper-container.slide swiper-slide.slide00 {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 6s, 3s, 3s, 3s, 7s */
+.sect01 .slide swiper-slide.slide01 {
+  background-image: url("../img/slide01.gif");
+}
+.sect01 .slide swiper-slide.slide02 {
+  background-image: url("../img/slide02.gif");
+}
+.sect01 .slide swiper-slide.slide03 {
+  background-image: url("../img/slide03.gif");
+}
+.sect01 .slide swiper-slide.slide04 {
+  background-image: url("../img/slide04.gif");
+}
+.sect01 .slide swiper-slide.slide05 {
+  background-image: url("../img/slide05.gif");
+}
+.sect01 .slide swiper-slide.slide06 {
+  background-image: url("../img/slide06.gif");
+}
+.sect01 .slide swiper-slide.slide07 {
+  background-image: url("../img/slide07.gif");
+}
+
+swiper-button-prev,
+swiper-button-next,
+svg,
+.swiper-pagination-bullet-active {
+  background: brown;
+}
+
+/* common */
+section {
+  box-sizing: border-box;
+  padding-top: 50px;
+  width: 100%;
+  /* height: 400px; */
+}
+.more {
+  font-size: 12px;
+  font-weight: 300;
+  margin-left: 5px;
+  padding: 10px;
+  transition: 0.5s;
+}
+.more:hover {
+  color: brown;
+}
+h3 {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px;
+}
+h4 {
+  font-weight: 700;
+  padding: 10px;
+}
+.text {
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+.text_box {
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+.text_line {
+  display: flex;
+  padding-left: 10px;
+}
+.text_line p {
+  width: 50%;
+  line-height: 2;
+}
+span {
+  font-weight: 700;
+}
+p {
+  line-height: 1.5;
+}
+
+/* sect02 */
+.sect02 {
+  height: 500px;
+}
+.sect02 .move {
+  box-sizing: border-box;
+  margin: 10px 0;
+  width: 100%;
+  height: 380px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px #cccccc;
+  border-radius: 5px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.sect02 .move img {
+  box-sizing: border-box;
+  margin-left: 20px;
+  width: 220px;
+}
+.sect02 .move .text .pp {
+  line-height: 2;
+  padding-left: 10px;
+  padding: 5px 10px;
+}
+
+/* sect03 */
+.sect03 .char_list {
+  display: flex;
+  margin-top: 10px;
+  height: 300px;
+  cursor: pointer;
+}
+.sect03 .char_list .char {
+  display: flex;
+  height: 100%;
+}
+.sect03 .char_list:first-child .char .char_back {
+  width: 800px;
+  display: block;
+}
+.sect03 .char_list .char .char_title {
+  box-sizing: border-box;
+  background-color: brown;
+  color: #fff;
+  transform: rotate(180deg);
+  font-weight: 700;
+  padding: 20px 10px;
+  border-right: 1px solid #ddd;
+  border-radius: 0 5px 5px 0;
+  writing-mode: vertical-rl;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.sect03 .char_list .char .char_back {
+  box-sizing: border-box;
+  width: 0;
+  display: flex;
+  background-color: #f6f6f6;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+  border-radius: 0 5px 5px 0;
+}
+.sect03 .char_list .char:hover > .char_back {
+  width: 800px;
+}
+/* .sect03 .char_list .char:active > .char_back {
+  width: 800px;
+} */
+
+.sect03 .char_list .char.on > .char_back {
+  width: 800px;
+}
+
+.sect03 .char_list .char .char_back .char_box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.sect03 .char_list .char .char_back li img {
+  height: 300px;
+  width: 260px;
+}
+.sect03 .char_list .char .text {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 500px;
+  height: 100%;
+  font-size: 14px;
+  margin: 20px;
+}
+.sect03 .char_list .char .text p {
+  padding: 10px;
+}
+
+.sect03 .char_list .prev {
+  width: 100%;
+}
+
+/* sect04 */
+.sect04 {
+  width: 100%;
+  height: 450px;
+  /* overflow: hidden; */
+}
+.sect04 .famous-line {
+  margin-top: 10px;
+  width: 100%;
+  height: 350px;
+}
+.sect04 swiper-container swiper-slide {
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 1px solid #c4c4c4; */
+  border-radius: 15px 0 15px 0;
+  background-color: #f6f6f6;
+  /* box-shadow: 0 0 5px #666; */
+}
+.sect04 swiper-container swiper-slide .text {
+  text-align: center;
+}
+.sect04 swiper-container swiper-slide .text h4 {
+  line-height: 2;
+}
+.sect04 swiper-container swiper-slide:nth-child(1) .text h4,
+.sect04 swiper-container swiper-slide:nth-child(6) .text h4 {
+  line-height: 1.6;
+}
+.blue {
+  color: blue;
+}
+.purple {
+  color: purple;
+}
+
+/* sect05 banner */
+.sect05 a.hover {
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  width: 480px;
+  height: 240px;
+  background: url(./img/h-miranda.png) no-repeat -20px 500px, url(./img/h-andy2.png) no-repeat 500px 0, url(./img/h-devil2.png) no-repeat 0 -150px, url(./img/h-back.png) no-repeat 0 0;
+  transition: background-position 0.5s ease-in 0.2s;
+}
+.sect05 a.hover:hover {
+  background-position: -30px 0, 335px 10px, 0 0, 0 0;
+}
+.sect05 a.hover .hover-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.4s 0.5s;
+}
+.sect05 a.hover:hover .hover-logo {
+  top: -300px;
+}
+.sect05 a.hover .hover-talk {
+  position: absolute;
+  top: 50px;
+  left: 175px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  color: #333;
+  line-height: 1.2;
+  opacity: 0;
+  transition: all 0.4s ease-out 0.3s 0.2s;
+}
+.sect05 a.hover:hover .hover-talk {
+  opacity: 100;
+  transition: all 0.4s ease-in 0.5s;
+}
+.sect05 a.hover .hover-talk2 {
+  position: absolute;
+  top: 90px;
+  left: 170px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.2;
+  opacity: 0;
+  transition: all 0.4s ease-out 0.8s;
+}
+.sect05 a.hover:hover .hover-talk2 {
+  opacity: 100;
+}
+
+/* sect06 behind */
+.sect06 {
+  height: 640px;
+}
+.sect06 .behind {
+  text-align: center;
+}
+.sect06 .behind a {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 480px;
+  height: 240px;
+  border-radius: 5px;
+  /* padding: 5px; */
+  margin: 5px;
+}
+.sect06 .behind a img {
+  opacity: 1;
+  transition: 0.5s;
+}
+.sect06 .behind a:hover img {
+  opacity: 0.5;
+  scale: 1.1;
+}
+.sect06 .behind a p {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: 700;
+  background-color: #f6f6f6d5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #666;
+  transition: 0.5s;
+}
+.sect06 .behind a:hover p {
+  display: block;
+}
+
+/* footer  */
+footer {
+  background-color: #d9d9d9;
+  margin: 0 auto;
+  height: 150px;
+  text-align: center;
+}
+footer .inner {
+  padding: 50px 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+footer .inner p {
+  margin-bottom: 10px;
+}
+.email {
+  color: brown;
+  transition: 0.5s;
+}
+.email:hover {
+  font-size: 16px;
+}

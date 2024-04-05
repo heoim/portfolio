@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- slick slide -->
+    <script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-migrate-1.4.1.js"></script>
+
+    <!-- swiper slide -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/jquery-1.12.3.js"></script>
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <!-- top -->
+    <button class="totop"><i class="fa-solid fa-chevron-up top"></i></button>
+    
+    <header>
+      <div class="inner">
+        <ul class="main_menu">
+          <li><a href="#top">HOME</a></li>
+          <li>
+            <a href="javascript:void(0)" class="about">ABOUT ME</a>
+            <ul class="sub_menu">
+              <li><a href="./about.html#top">PROFILE</a></li>
+              <li><a href="./about.html#skill">SKILL</a></li>
+              <li><a href="./about.html#certifi">CERTIFICATE</a></li>
+              <li><a href="./about.html#edu">EDUCATION</a></li>
+            </ul>
+          </li>
+          <li><a href="#sect02">WEB PURBLIC</a></li>
+          <li><a href="#sect03">GRAPHIC</a></li>
+          <li><a href="#sect04">DEVELOPE</a></li>
+          <li><a href="#footer">CONTACT</a></li>
+        </ul>
+        <div class="resp">
+          <i class="fa-solid fa-list"></i>
+          <ul class="resp_menu">
+            <li><a href="#top">HOME</a></li>
+            <li class="resp_sub">
+              <a href="javascript:void(0)">ABOUT ME</a>
+              <ul class="resp_submenu">
+                <li><a href="./about.html#top">PROFILE</a></li>
+                <li><a href="./about.html#skill">SKILL</a></li>
+                <li><a href="./about.html#certifi">CERTIFICATE</a></li>
+                <li><a href="./about.html#edu">EDUCATION</a></li>
+              </ul>
+            </li>
+            <li><a href="#sect02">WEB PURBLIC</a></li>
+            <li><a href="#sect03">GRAPHIC</a></li>
+            <li><a href="#sect04">DEVELOPE</a></li>
+            <li><a href="#footer">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- section01 wave -->
+    <section class="sect01" id="sect01">
+      <div class="inner flex">
+        <h1>Portfolio</h1>
+      </div>
+      <!--Waves Container-->
+      <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(180,180,180,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(200,200,200,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(230,230,230,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="9" fill="#fff" />
+          </g>
+        </svg>
+      </div>
+      <!--Waves end-->
+    </section>
+
+    <!-- section02 web -->
+    <section class="sect02" id="sect02">
+      <div class="inner">
+        <h3>WEB</h3>
+        <input type="radio" name="slide" id="slide01" value="slide01" checked /><label for="slide01" class="under_line">Sidmool</label>
+        <input type="radio" name="slide" id="slide02" value="slide02" /><label for="slide02" class="under_line">Visit JEJU</label>
+        <input type="radio" name="slide" id="slide03" value="slide04" /><label for="slide03" class="under_line">The Devil Wears PRADA</label>
+        <input type="radio" name="slide" id="slide04" value="slide03" /><label for="slide04" class="under_line">Solar</label>
+        <input type="radio" name="slide" id="slide05" value="slide05" /><label for="slide05" class="under_line">Norang Chicken</label>
+
+        <div class="slidewrap">
+          <ul class="slidelist">
+            <li>
+              <div class="page page01">
+                <img src="./img/web/web01.png" alt="web" />
+                <div class="web_title center_line">
+                  <div class="center_line00">
+                    <p>시드물 홈페이지 리뉴얼 (반응형)</p>
+                  </div>
+                  <div class="center_line00">
+                    <a href="javascript:void(0);" class="btn web_plan01 popup_btn">리뉴얼 기획서</a>
+                    <a href="./sidmool/index.html" class="btn web_goto" target="_blank">웹사이트 바로가기</a>
+                    <a href="https://www.sidmool.com/index.html" target="_blank" class="btn web_goto_ex">기존사이트</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="page page02">
+                <img src="./img/web/web02.png" alt="web" />
+                <div class="web_title center_line">
+                  <div class="center_line00">
+                    <p>비짓제주 홈페이지 리뉴얼 (반응형)</p>
+                  </div>
+                  <div class="center_line00">
+                    <a href="javascript:void(0);" class="btn web_plan02 popup_btn">리뉴얼 기획서</a>
+                    <a href="./visitjeju/index.html" class="btn web_goto" target="_blank">웹사이트 바로가기</a>
+                    <a href="https://www.visitjeju.net/kr" target="_blank" class="btn web_goto_ex">기존사이트</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="page page03">
+                <img src="./img/web/web03.png" alt="web" />
+                <div class="web_title center_line">
+                  <div class="center_line00">
+                    <p>영화 '악마는 프라다를 입는다' 홈페이지</p>
+                  </div>
+                  <div class="center_line00">
+                    <a href="javascript:void(0);" class="btn web_plan04 popup_btn">기획서</a>
+                    <a href="./devil/index.html" class="btn web_goto" target="_blank">웹사이트 바로가기</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="page page04">
+                <img src="./img/web/web04.png" alt="web" />
+                <div class="web_title center_line">
+                  <div class="center_line00">
+                    <p>SLT 홈페이지</p>
+                  </div>
+                  <div class="center_line00">
+                    <a href="./slt/index.html" class="btn web_goto" target="_blank">웹사이트 바로가기</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="page page05">
+                <img src="./img/web/web05.png" alt="web" />
+                <div class="web_title center_line">
+                  <div class="center_line00">
+                    <p>노랑통닭 홈페이지 디자인</p>
+                  </div>
+                  <div class="center_line00">
+                    <a href="javascript:void(0);" class="btn web_plan05 popup_btn">웹디자인 미리보기</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+            
+      <!-- sect02 popup plan -->
+        <div class="web01 popup_back">
+          <div class="pop_close"><a href="javascript:void(0);">X</a></div>
+          <div class="popup">
+            <div class="pop_cont">
+              <img src="./img/web/sidmool-plan01.png" alt="시드물 리뉴얼" />
+              <img src="./img/web/sidmool-plan02.png" alt="시드물 리뉴얼" />
+              <img src="./img/web/sidmool-plan03.png" alt="시드물 리뉴얼" />
+              <img src="./img/web/sidmool-plan04.png" alt="시드물 리뉴얼" />
+              <img src="./img/web/sidmool-plan05.png" alt="시드물 리뉴얼" />
+              <img src="./img/web/sidmool-plan06.png" alt="시드물 리뉴얼" />
+              <img src="./img/web/sidmool-plan07.png" alt="시드물 리뉴얼" />
+              <img src="./img/web/sidmool-plan08.png" alt="시드물 리뉴얼" />
+            </div>
+          </div>
+        </div>
+
+        <div class="web02 popup_back">
+          <div class="pop_close"><a href="javascript:void(0);">X</a></div>
+          <div class="popup">
+            <div class="pop_cont">
+              <img src="./img/web/visitjeju-plan01.png" alt="비짓제주 리뉴얼" />
+              <img src="./img/web/visitjeju-plan02.png" alt="비짓제주 리뉴얼" />
+              <img src="./img/web/visitjeju-plan03.png" alt="비짓제주 리뉴얼" />
+              <img src="./img/web/visitjeju-plan04.png" alt="비짓제주 리뉴얼" />
+              <img src="./img/web/visitjeju-plan05.png" alt="비짓제주 리뉴얼" />
+              <img src="./img/web/visitjeju-plan06.png" alt="비짓제주 리뉴얼" />
+              <img src="./img/web/visitjeju-plan07.png" alt="비짓제주 리뉴얼" />
+              <img src="./img/web/visitjeju-plan08.png" alt="비짓제주 리뉴얼" />
+              <img src="./img/web/visitjeju-plan09.png" alt="비짓제주 리뉴얼" />
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="web03 popup_back">
+          <div class="pop_close"><a href="javascript:void(0);">X</a></div>
+          <div class="popup">
+            <div class="pop_cont">
+              <img src="./img/web/sidmool-plan01.png" alt="시드물 리뉴얼" />
+              <img src="./img/web/sidmool-plan02.png" alt="시드물 리뉴얼" />
+              <img src="./img/web/sidmool-plan03.png" alt="시드물 리뉴얼" />
+
+            </div>
+          </div>
+      </div> -->
+    </section>
+
+    <!-- sect03 -->
+    <section class="sect03" id="sect03">
+      <div class="inner">
+        <h3>GRAPHIC</h3>
+        <div class="center_line">
+          <div class="medal">
+            <div class="front">
+              <img src="./img/graphic/icon-graphic-1-bighero.png" alt="빅히어로" />
+            </div>
+            <div class="back">
+              <img src="./img/graphic/icon-graphic-1-bighero.png" alt="빅히어로" />
+              <p class="medal_back_title">빅히어로</p>
+              <div class="center_line">
+                <a href="javascript:void(0);" class="btn graph_btn01 popup_btn">기획안</a>
+                <a href="javascript:void(0);" class="btn graph_btn01_a popup_btn">미리보기</a>
+              </div>
+            </div>
+          </div>
+          <div class="medal">
+            <div class="front">
+              <img src="./img/graphic/icon-graphic-2-caffeine.png" alt="고카페인 음료" />
+            </div>
+            <div class="back">
+              <img src="./img/graphic/icon-graphic-2-caffeine.png" alt="고카페인 음료" />
+              <p class="medal_back_title">고카페인 음료</p>
+              <div class="center_line">
+                <a href="javascript:void(0);" class="btn graph_btn02 popup_btn">기획안</a>
+                <a href="javascript:void(0);" class="btn graph_btn02_b popup_btn">미리보기</a>
+              </div>
+            </div>
+          </div>
+          <div class="medal">
+            <div class="front">
+              <img src="./img/graphic/icon-graphic-3-jeju.png" alt="제주투어" />
+            </div>
+            <div class="back">
+              <img src="./img/graphic/icon-graphic-3-jeju.png" alt="제주투어" />
+              <p class="medal_back_title">제주투어</p>
+              <div class="center_line">
+                <a href="javascript:void(0);" class="btn graph_btn03 popup_btn">기획안</a>
+                <a href="javascript:void(0);" class="btn graph_btn03_c popup_btn">미리보기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="center_line">
+          <div class="medal">
+            <div class="front">
+              <img src="./img/graphic/icon-graphic-4-lemon.png" alt="레몬농장" />
+            </div>
+            <div class="back">
+              <img src="./img/graphic/icon-graphic-4-lemon.png" alt="레몬농장" />
+              <p class="medal_back_title">레몬농장</p>
+              <div class="center_line">
+                <a href="javascript:void(0);" class="btn graph_btn04 popup_btn">기획안</a>
+                <a href="javascript:void(0);" class="btn graph_btn04_d popup_btn">미리보기</a>
+              </div>
+            </div>
+          </div>
+          <div class="medal">
+            <div class="front">
+              <img src="./img/graphic/icon-graphic-5-onep.png" alt="셀디온" />
+            </div>
+            <div class="back">
+              <img src="./img/graphic/icon-graphic-5-onep.png" alt="셀디온" />
+              <p class="medal_back_title">셀디온 원피스</p>
+              <div class="center_line">
+                <a href="javascript:void(0);" class="btn graph_btn05 popup_btn">기획안</a>
+                <a href="javascript:void(0);" class="btn graph_btn05_e popup_btn">미리보기</a>
+              </div>
+            </div>
+          </div>
+          <div class="medal">
+            <div class="front">
+              <img src="./img/graphic/icon-graphic-6-bback.png" alt="빽다방" />
+            </div>
+            <div class="back">
+              <img src="./img/graphic/icon-graphic-6-bback.png" alt="빽다방" />
+              <p class="medal_back_title">빽다방</p>
+              <div class="center_line">
+                <a href="javascript:void(0);" class="btn graph_btn06 popup_btn">기획안</a>
+                <a href="javascript:void(0);" class="btn graph_btn06_f popup_btn">미리보기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- sect03 popup -->
+      <div class="sect_popup">
+        <div class="graphic01 popup_back">
+          <div class="pop_close"><a href="javascript:void(0);">X</a></div>
+          <div class="popup">
+            <div class="pop_cont">
+              <img src="./img/graphic/graphic-pop01-1.png" alt="빅히어로" />
+              <img src="./img/graphic/graphic-pop01-2.png" alt="빅히어로" />
+            </div>
+          </div>
+        </div>
+        
+        <div class="graphicA swiper_back">
+          <div class="swiper_popup_back"></div>
+          <div class="pop_close"><a href="javascript:void(0);">X</a></div>
+            <swiper-container class="mySwiper swiper_popup" pagination="true" pagination-clickable="true" 
+            centered-slides="true" space-between="30" navigation="true" slides-per-view="3"
+            center-slide="true" 
+            autoplay-desable-on-interaction="false"
+            >
+              <swiper-slide><img src="./img/graphic/slick-graphic-1-1.png" alt="빅히어로" /></swiper-slide>
+              <swiper-slide><img src="./img/graphic/slick-graphic-1-2.png" alt="빅히어로" /></swiper-slide>
+              <swiper-slide><img src="./img/graphic/slick-graphic-1-3.png" alt="빅히어로" /></swiper-slide>
+              <swiper-slide><img src="./img/graphic/slick-graphic-1-4.png" alt="빅히어로" /></swiper-slide>
+              <swiper-slide><img src="./img/graphic/slick-graphic-1-5.png" alt="빅히어로" /></swiper-slide>
+              <swiper-slide><img src="./img/graphic/slick-graphic-1-6.png" alt="빅히어로" /></swiper-slide>
+            </swiper-container>
+        </div>
+  
+        <div class="graphic02 popup_back">
+          <div class="pop_close"><a href="javascript:void(0);">X</a></div>
+          <div class="popup">
+            <div class="pop_cont">
+              <img src="./img/graphic/graphic-pop02-1.png" alt="고카페인 음료" />
+              <img src="./img/graphic/graphic-pop02-2.png" alt="고카페인 음료" />
+            </div>
+          </div>
+        </div>
+        
+        <div class="graphicB swiper_back">
+          <div class="swiper_popup_back"></div>
+          <div class="pop_close"><a href="javascript:void(0);">X</a></div>
+            <swiper-container class="mySwiper swiper_popup" pagination="true" pagination-clickable="true" 
+            centered-slides="true" space-between="30" navigation="true" slides-per-view="3"
+            center-slide="true" 
+            autoplay-desable-on-interaction="false"
+            >
+              <swiper-slide><img src="./img/graphic/slick-graphic-2-1.png" alt="고카페인" /></swiper-slide>
+              <swiper-slide><img src="./img/graphic/slick-graphic-2-2.png" alt="고카페인" /></swiper-slide>
+              <swiper-slide><img src="./img/graphic/slick-graphic-2-3.png" alt="고카페인" /></swiper-slide>
+              <swiper-slide><img src="./img/graphic/slick-graphic-2-4.png" alt="고카페인" /></swiper-slide>
+              <swiper-slide><img src="./img/graphic/slick-graphic-2-5.png" alt="고카페인" /></swiper-slide>
+              <swiper-slide><img src="./img/graphic/slick-graphic-2-6.png" alt="고카페인" /></swiper-slide>
+              <swiper-slide><img src="./img/graphic/slick-graphic-2-7.png" alt="고카페인" /></swiper-slide>
+              <swiper-slide><img src="./img/graphic/slick-graphic-2-8.png" alt="고카페인" /></swiper-slide>
+            </swiper-container>
+        </div>
+  
+        <div class="graphic03 popup_back">
+          <div class="pop_close"><a href="javascript:void(0);">X</a></div>
+          <div class="popup">
+            <div class="pop_cont">
+              <img src="./img/graphic/graphic-pop03-1.png" alt="제주투어 패키지" />
+            </div>
+          </div>
+        </div>
+  
+        <div class="graphicC swiper_back">
+          <div class="swiper_popup_back"></div>
+          <div class="pop_close"><a href="javascript:void(0);">X</a></div>
+            <swiper-container class="mySwiper swiper_popup" pagination="true" pagination-clickable="true" 
+            centered-slides="true" space-between="30" navigation="true" slides-per-view="3"
+            center-slide="true" 
+            autoplay-desable-on-interaction="false"
+            >
+              <swiper-slide><img src="./img/graphic/slick-graphic-3-1.png" alt="제주투어" /></swiper-slide>
+              <swiper-slide><img src="./img/graphic/slick-graphic-3-2.png" alt="제주투어" /></swiper-slide>
+              <swiper-slide><img src="./img/graphic/slick-graphic-3-3.png" alt="제주투어" /></swiper-slide>
+            </swiper-container>
+        </div>
+
+        <div class="graphic04 popup_back">
+          <div class="pop_close"><a href="javascript:void(0);">X</a></div>
+          <div class="popup">
+            <div class="pop_cont">
+              <img src="./img/graphic/graphic-pop04-1.png" alt="비지네 레몬농장" />
+              <img src="./img/graphic/graphic-pop04-2.png" alt="비지네 레몬농장" />
+            </div>
+          </div>
+        </div>
+
+        <div class="graphicD swiper_back">
+          <div class="swiper_popup_back"></div>
+          <div class="pop_close"><a href="javascript:void(0);">X</a></div>
+          <div class="scroll_popup">
+            <img src="./img/graphic/graphic-pop04-3.png" alt="레몬농장">
+          </div>
+        </div>
+  
+        <div class="graphic05 popup_back">
+          <div class="pop_close"><a href="javascript:void(0);">X</a></div>
+          <div class="popup">
+            <div class="pop_cont">
+              <img src="./img/graphic/graphic-pop05-1.png" alt="셀디온 카라 롱 원피스" />
+              <img src="./img/graphic/graphic-pop05-2.png" alt="셀디온 카라 롱 원피스" />
+            </div>
+          </div>
+        </div>
+        
+        <div class="graphicE swiper_back">
+          <div class="swiper_popup_back"></div>
+          <div class="pop_close"><a href="javascript:void(0);">X</a></div>
+          <div class="scroll_popup">
+            <img src="./img/graphic/graphic-pop05-3.png" alt="원피스">
+            <img src="./img/graphic/graphic-pop05-4.png" alt="원피스">
+          </div>
+        </div>
+  
+          <div class="graphic06 popup_back">
+          <div class="pop_close"><a href="javascript:void(0);">X</a></div>
+          <div class="popup">
+            <div class="pop_cont">
+              <img src="./img/graphic/graphic-pop06-1.png" alt="뻭다방 배너" />
+            </div>
+          </div>
+        </div>
+        
+        <div class="graphicF swiper_back">
+          <div class="swiper_popup_back"></div>
+          <div class="pop_close"><a href="javascript:void(0);">X</a></div>
+          <div class="scroll_popup">
+            <img src="./img/graphic/graphic-pop06-2.png" alt="빽다방">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sect04 -->
+    <section class="sect04" id="sect04">
+      <div class="blind">
+        <h3>준비중입니다....</h3>
+      </div>
+      <div class="inner">
+        <h3>WEB DEVELOPMENT</h3>
+        <div class="dev_sect01">
+          <!-- <h4>진상테스트</h4> -->
+          <div class="center_line00">
+            <div class="center_line11">
+              <div class="box_list">
+                <a href="javascript:void(0);">
+                  <div class="box box01"></div>
+                  <p>진상 반려자 테스트</p></a>
+              </div>
+              <div class="box_list">
+                <a href="javascript:void(0);"><div class="box box02"></div>
+                <p>진상 시부모 테스트</p></a>
+              </div>
+            </div>
+            <div class="center_line11">
+              <div class="box_list">
+                <a href="javascript:void(0);"><div class="box box03"></div>
+                <p>진상 학부모 테스트</p></a>
+              </div>
+              <div class="box_list">
+                <a href="javascript:void(0);"><div class="box box04"></div>
+                <p>진상 이웃 테스트</p></a>
+              </div>
+            </div>
+          </div>
+          <div class="center_line00">
+            <div class="center_line11">
+              <div class="box_list">
+                <a href="javascript:void(0);"><div class="box box05"></div>
+                <p>진상 손님 테스트</p></a>
+              </div>
+              <div class="box_list">
+                <a href="javascript:void(0);">
+                  <div class="box box06"></div>
+                  <p>진상 택배 테스트</p></a>
+              </div>
+            </div>
+            <div class="center_line11">
+              <div class="box_list">
+                <a href="javascript:void(0);"><div class="box box07"></div>
+                <p>진상 갑질 테스트</p></a>
+              </div>
+              <div class="box_list">
+                <a href="javascript:void(0);"><div class="box box08"></div>
+                <p>진상 판사 테스트</p></a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="inner">
+        <p class="copy">
+          <small>
+            본 사이트는 개인 포트폴리오용으로 제작되었습니다. <br />
+            &copy; All rights reserved by aCupOfCode0.0. 2024
+          </small>
+        </p>
+        <div class="sns">
+          <a href="mailto:acupofcode0.0@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
