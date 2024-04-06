@@ -16,8 +16,7 @@
   font-style: normal;
 }
 /* Abril Fatface */
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
 * {
   margin: 0;
@@ -259,11 +258,11 @@ section.sect01 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   padding: 12px 48px;
   /* color: #f8f6e7; */
-  background: linear-gradient(to right, #141414 0, white 10%, #2b2b2b 20%);
-  
+  background: linear-gradient(to right, #141414 0, rgb(167, 167, 167) 10%, #2b2b2b 20%);
+
   background-position: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -273,11 +272,25 @@ section.sect01 {
 }
 @keyframes shine {
   0% {
-    background-position: 0;}
-  60% {
-    background-position: 300px;}
+    background-position: 0;
+  }
+  /* 60% {
+    background-position: 300px;
+  } */
   100% {
-    background-position: 300px;}
+    background-position: 300px;
+  }
+}
+@media screen and (max-width: 767px) {
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+
+    100% {
+      background-position: 260px;
+    }
+  }
 }
 
 .flex {
@@ -529,18 +542,18 @@ section.sect01 {
   position: relative;
 }
 .sect03 .inner .center_line {
+  max-width: 800px;
   height: auto;
   padding: 20px 0;
   gap: 40px;
-  margin: 20px 0;
+  margin: 20px auto;
 }
 .sect03 .inner .medal {
-  max-width: 250px;
-  min-width: 200px;
-  max-height: 250px;
-  min-height: 200px;
+  width: 200px;
+  height: 200px;
   /* -ms-text-align-last: 250px; */
   perspective: 600px;
+  transition: 0.5s;
 }
 .sect03 .inner .medal .front,
 .sect03 .inner .medal .back {
@@ -598,6 +611,15 @@ section.sect01 {
 
 .sect03 .inner .medal .back .center_line .btn {
   text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .sect03 .inner .center_line {
+    gap: 3px;
+  }
+  .sect03 .inner .medal {
+    scale: 0.8;
+  }
 }
 
 /* ========== sect03 - popup 기획안 ========== */
