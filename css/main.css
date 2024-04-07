@@ -274,9 +274,6 @@ section.sect01 {
   0% {
     background-position: 0;
   }
-  /* 60% {
-    background-position: 300px;
-  } */
   100% {
     background-position: 300px;
   }
@@ -345,10 +342,6 @@ section.sect01 {
 }
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
-  /* .waves {
-    height:40px;
-    min-height:40px;
-  } */
   .content {
     height: 30vh;
   }
@@ -634,7 +627,6 @@ section.sect01 {
 .graphic06 .popup {
   overflow: hidden;
   overflow-x: hidden;
-  /* padding-bottom: 10px; */
   position: relative;
 }
 

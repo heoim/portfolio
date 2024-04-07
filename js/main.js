@@ -24,20 +24,6 @@ $(function () {
     $(this).find(".resp_submenu").stop().slideUp(600);
   });
 
-// section02 web prod_list
-  // $('#sect02 .prod_menu01').click(function(){
-  //   $('#sect02 .prod_list .prodt01').stop().s
-  // })
-
-
-  // sect02 web label
-  $('.sect02 .inner label').click(function(){
-    $('.sect02 .inner label').removeClass('click');
-    $(this).addClass('click');
-  });
-
-  
-
 
   //레이어팝업
   $(".web_plan01").click(function () {
@@ -170,14 +156,7 @@ $(function () {
     }
   });
 
-  //팝업시 배경 스크롤 막기
-  // $('body').toggleClass('scrollLock');
-
-  // 팝업시 배경 스크롤 막기
-  // const body = document.getElementsByTagName('body')[0];
-  // body.classList.add('scrollLock');
-
-  // 스크롤바 내리면 header 배경색 나타나기
+  // 스크롤바 내리면 header 배경색 하얗게, 글씨 검게 변하기
   const header = document.querySelector("header");
   const headerHeight = header.getBoundingClientRect().height;
 
@@ -189,25 +168,4 @@ $(function () {
     }
   });
 
-  // 클릭시 상단으로 올라가는 ToTop 버튼
-  // const scrollRef = useRef(null);
-  // useEffect(() => {
-  //   scrollRef.current.scrollIntoView({behavior:"smooth", block : "center"});
-  // }, [focusIndex]);
-// const special = document.querySelector(".special");
-// btn.addEventListener('click', event=>{
-//   special.scrollIntoView({behavior: "smooth", block:"center"})
-// })
-
-
-  // ========= scrollmagic
-  // const spyEls = document.querySelectorAll(".scroll-spy");
-  // spyEls.forEach((spyEl) => {
-  //   new ScrollMagic.Scene({
-  //     triggerElement: spyEl,
-  //     triggerHook: 0.8,
-  //   })
-  //     .setClassToggle(spyEl, "show")
-  //     .addTo(new ScrollMagic.Controller());
-  // });
 });
