@@ -812,7 +812,7 @@ swiper-slide img {
   header .inner .resp .resp_menu > li > .resp_submenu {
     display: none;
     font-size: 14px;
-    background-color: #fae2a6;
+    background-color: var(--top-button);
   }
   header .inner .resp .resp_menu .resp_submenu li a {
     display: block;
@@ -823,8 +823,8 @@ swiper-slide img {
   header .inner .resp .resp_menu .resp_submenu li:hover a {
     display: block;
     color: #fff;
-    background-color: #f8b600;
-    text-shadow: 0 0 5px #664b00;
+    background-color: var(--top-button-over);
+    text-shadow: 0 0 5px var(--header-color);
   }
 
   /* sect02 web */
