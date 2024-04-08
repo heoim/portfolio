@@ -58,10 +58,16 @@ body {
 }
 
 :root {
-  --main-color: #f6f6f6;
+  /* --main-color: #f6f6f6;
   --button-color: #fddca9;
   --top-button: #fccd4d;
   --top-button-over: #f8b600;
+  --dot-w: calc(var(--btn-w) * 0.2); */
+  --main-color: #f6f6f6;
+  --header-color: #02315b;
+  --button-color: #ccf8fe;
+  --top-button: #b5eefa;
+  --top-button-over: #a6dee0;
   --dot-w: calc(var(--btn-w) * 0.2);
 }
 
@@ -82,15 +88,16 @@ body {
   padding: 5px;
   text-align: center;
   border-radius: 50%;
-  background: linear-gradient(#fceabb 0%, #fccd4d 60%);
-  box-shadow: 0px 0px 10px #333;
+  /* background: linear-gradient(#fceabb 0%, #fccd4d 60%); */
+  background: linear-gradient(var(--button-color) 0%, var(--top-button) 60%);
+  box-shadow: 0px 0px 10px #a2a2a2;
   transition: 0.3s;
   cursor: pointer;
   border: 1px solid #8f8f8f;
   font-weight: 700;
 }
 .totop:hover {
-  background: linear-gradient(#fae2a6 0%, #f8b600 60%);
+  background: linear-gradient(var(--button-color) 0%, var(--top-button-over) 60%);
   scale: 1.1;
 }
 
@@ -127,7 +134,7 @@ section {
 }
 .btn:hover,
 .btn:active {
-  background-color: #fddca9;
+  background-color: var(--top-button-over);
 }
 
 /* ====== header ====== */
@@ -139,7 +146,9 @@ header {
   transition: 0.5s;
   color: #fff;
   text-shadow: 0 0 5px #000;
-  background-color: #88888890;
+  /* background-color: #1e7797b2; */
+  /* background-color: var(--header-color); */
+  background-color: var(--header-color);
 }
 header.active {
   /* 스크롤바 내리면 헤드 배경색 나타나기 */
@@ -225,26 +234,13 @@ section .inner {
 section.sect01 {
   box-sizing: border-box;
   width: 100%;
-  height: 85vh;
-  margin-top: 0;
-  margin-bottom: 10vh;
-  background: url(../img/home-bg01.jpg) fixed center/cover;
 }
-.sect01 .inner {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  height: 65vh;
+.sect01 video {
   width: 100%;
-  margin: 0 auto;
-  transition: 0.5s;
-  padding-top: 44.3vh;
+  height: 85vh;
+  object-fit: cover;
 }
-.abril-fatface-regular {
-  font-family: "Abril Fatface", serif;
-  font-weight: 400;
-  font-style: normal;
-}
+
 .sect01 h1 {
   font-family: "Abril Fatface", serif;
   /* font-style: italic; */
@@ -253,30 +249,6 @@ section.sect01 {
   transition: 0.5s;
   color: #333;
   /* text-shadow: 0px 0px 10px #ddd; */
-}
-.shine {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 12px 48px;
-  /* color: #f8f6e7; */
-  background: linear-gradient(to right, #141414 0, rgb(167, 167, 167) 10%, #2b2b2b 20%);
-
-  background-position: 0;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 3s infinite linear;
-  animation-fill-mode: forwards;
-  -webkit-text-size-adjust: none;
-}
-@keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: 300px;
-  }
 }
 @media screen and (max-width: 767px) {
   @keyframes shine {
@@ -290,56 +262,6 @@ section.sect01 {
   }
 }
 
-.flex {
-  /*Flexbox for containers*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.waves {
-  position: relative;
-  width: 100%;
-  height: 15vh;
-  margin-bottom: -7px; /*Fix for safari gap*/
-  min-height: 100px;
-  max-height: 150px;
-}
-.content {
-  position: relative;
-  height: 20vh;
-  text-align: center;
-  background-color: white;
-}
-
-/* Animation */
-.parallax > use {
-  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-}
-.parallax > use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-}
-.parallax > use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-}
-.parallax > use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-}
-.parallax > use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-}
-@keyframes move-forever {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-  }
-  100% {
-    transform: translate3d(85px, 0, 0);
-  }
-}
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .content {
@@ -382,7 +304,7 @@ section.sect01 {
   content: "";
   display: block;
   transform: scaleX(0);
-  border-bottom: 5px solid #fccd4d;
+  border-bottom: 5px solid var(--top-button-over);
   border-radius: 5px;
   transition: transform 0.5s ease-in-out;
 }
