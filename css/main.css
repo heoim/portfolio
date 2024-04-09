@@ -235,12 +235,31 @@ section.sect01 {
   box-sizing: border-box;
   width: 100%;
 }
-.sect01 video {
-  width: 100%;
-  height: 85vh;
+.sect01 .bg_video {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%; width: 100%; z-index: -1;
+}
+.sect01 .bg_video_content {
+  width: 100%; height: 100%;
   object-fit: cover;
 }
 
+.sect01 .inner {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 65vh;
+  width: 100%;
+  margin: 0 auto;
+  transition: 0.5s;
+  padding-top: 44.3vh;
+}
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .sect01 h1 {
   font-family: "Abril Fatface", serif;
   /* font-style: italic; */
@@ -250,6 +269,83 @@ section.sect01 {
   color: #333;
   /* text-shadow: 0px 0px 10px #ddd; */
 }
+.shine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 48px;
+  /* color: #f8f6e7; */
+  background: linear-gradient(to right, #f2f2f2 0, rgb(22, 22, 22) 10%, #ebebeb 20%);
+
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 300px;
+  }
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+/* Animation */
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
 @media screen and (max-width: 767px) {
   @keyframes shine {
     0% {
@@ -824,7 +920,7 @@ swiper-slide img {
     display: block;
     color: #fff;
     background-color: var(--top-button-over);
-    text-shadow: 0 0 5px var(--header-color);
+    text-shadow: 0 0 5px #664b00;
   }
 
   /* sect02 web */

@@ -9,9 +9,6 @@
       @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
     </style>
 
-    <!-- slick slide -->
-    <script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="./js/jquery-migrate-1.4.1.js"></script>
 
     <!-- swiper slide -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
@@ -67,12 +64,30 @@
 
     <!-- section01 wave -->
     <section class="sect01" id="sect01">
-      <video src="./img/home03.mp4" autoplay loop muted></video>
-      <!-- <div class="inner flex">
+      <div class="bg_video">
+        <video class="bg_video_content" autoplay loop muted>
+          <source src="./img/home03.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="inner flex">
         <h1 class="shine">Portfolio</h1>
-      </div> -->
-      
-      
+      </div>
+       <!--Waves Container-->
+       <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(180,180,180,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(200,200,200,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(230,230,230,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="9" fill="#fff" />
+          </g>
+        </svg>
+      </div>
+      <!--Waves end-->
     </section>
 
     <!-- section02 web -->
