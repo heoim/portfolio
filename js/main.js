@@ -24,6 +24,24 @@ $(function () {
     $(this).find(".resp_submenu").stop().slideUp(600);
   });
 
+// web 상단목록 클릭시 web 페이지 좌우로 이동
+  document.querySelector('.sect02 .inner .btn01').addEventListener('click', function(){
+    document.querySelector('.sect02 .slidewrap').style.transform = 'translate(0%)';
+  })
+  document.querySelector('.sect02 .inner .btn02').addEventListener('click', function(){
+    document.querySelector('.sect02 .slidewrap').style.transform = 'translate(-20%)';
+  })
+  document.querySelector('.sect02 .inner .btn03').addEventListener('click', function(){
+    document.querySelector('.sect02 .slidewrap').style.transform = 'translate(-40%)';
+  })
+  document.querySelector('.sect02 .inner .btn04').addEventListener('click', function(){
+    document.querySelector('.sect02 .slidewrap').style.transform = 'translate(-60%)';
+  })
+  document.querySelector('.sect02 .inner .btn05').addEventListener('click', function(){
+    document.querySelector('.sect02 .slidewrap').style.transform = 'translate(-80%)';
+  })
+
+
 
   //레이어팝업
   $(".web_plan01").click(function () {
