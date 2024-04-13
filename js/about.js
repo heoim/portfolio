@@ -16,3 +16,43 @@ $(function () {
     animated_contents();
   }
 });
+
+$(function () {
+  //sub_menu
+  $("header .inner .main_menu li").mouseenter(function () {
+    $(this).find(".sub_menu").stop().slideDown(600);
+  });
+  $("header .inner .main_menu li").mouseleave(function () {
+    $(this).find(".sub_menu").stop().slideUp(600);
+  });
+
+  // 반응형 menu
+  $("header .inner .resp").mouseenter(function () {
+    // $('header .inner .resp .resp_menu').slideToggle();
+    $(this).find(".resp_menu").stop().slideDown(600);
+  });
+  $("header .inner .resp").mouseleave(function () {
+    $(this).find(".resp_menu").stop().slideUp(600);
+  });
+
+  // 반응형 submenu 아코디언
+  $("header .inner .resp .resp_menu .resp_sub").mouseenter(function () {
+    $(this).find(".resp_submenu").stop().slideDown(600);
+  });
+  $("header .inner .resp .resp_menu .resp_sub").mouseleave(function () {
+    $(this).find(".resp_submenu").stop().slideUp(600);
+  });
+
+  // 스크롤바 내리면 header 배경색 하얗게, 글씨 검게 변하기
+  const header = document.querySelector("header");
+  const headerHeight = header.getBoundingClientRect().height;
+
+  document.addEventListener("scroll", () => {
+    if (window.scrollY > headerHeight) {
+      header.classList.add("active");
+    } else {
+      header.classList.remove("active");
+    }
+  });
+
+});

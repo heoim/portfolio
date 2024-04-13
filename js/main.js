@@ -1,5 +1,5 @@
 $(function () {
-  //top sub_menu
+  // sub_menu
   $("header .inner .main_menu li").mouseenter(function () {
     $(this).find(".sub_menu").stop().slideDown(600);
   });
@@ -7,7 +7,7 @@ $(function () {
     $(this).find(".sub_menu").stop().slideUp(600);
   });
 
-  // 반응형 top menu
+  // 반응형 menu
   $("header .inner .resp").mouseenter(function () {
     // $('header .inner .resp .resp_menu').slideToggle();
     $(this).find(".resp_menu").stop().slideDown(600);
@@ -16,13 +16,31 @@ $(function () {
     $(this).find(".resp_menu").stop().slideUp(600);
   });
 
-  // 반응형 top submenu 아코디언
+  // 반응형 submenu 아코디언
   $("header .inner .resp .resp_menu .resp_sub").mouseenter(function () {
     $(this).find(".resp_submenu").stop().slideDown(600);
   });
   $("header .inner .resp .resp_menu .resp_sub").mouseleave(function () {
     $(this).find(".resp_submenu").stop().slideUp(600);
   });
+
+// web 상단목록 클릭시 web 페이지 좌우로 이동
+  document.querySelector('.sect02 .inner .btn01').addEventListener('click', function(){
+    document.querySelector('.sect02 .slidewrap').style.transform = 'translate(0%)';
+  })
+  document.querySelector('.sect02 .inner .btn02').addEventListener('click', function(){
+    document.querySelector('.sect02 .slidewrap').style.transform = 'translate(-20%)';
+  })
+  document.querySelector('.sect02 .inner .btn03').addEventListener('click', function(){
+    document.querySelector('.sect02 .slidewrap').style.transform = 'translate(-40%)';
+  })
+  document.querySelector('.sect02 .inner .btn04').addEventListener('click', function(){
+    document.querySelector('.sect02 .slidewrap').style.transform = 'translate(-60%)';
+  })
+  document.querySelector('.sect02 .inner .btn05').addEventListener('click', function(){
+    document.querySelector('.sect02 .slidewrap').style.transform = 'translate(-80%)';
+  })
+
 
 
   //레이어팝업

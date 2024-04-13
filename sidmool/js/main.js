@@ -5,8 +5,8 @@ $(function () {
   //header 메뉴 반응형일때 sub메뉴 나타내기
   $(".gnb_respon_hidden").click(function () {
     $(".nav_gnb_respon_show").slideToggle();
-    $(".nav_search").stop().slideUp(600);
     // 반응형 메뉴 눌렀을 때 검색창 닫기
+    $(".nav_search").stop().slideUp(600);
   });
 
   // 외부영역 클릭시 닫히기
@@ -23,19 +23,31 @@ $(function () {
   // nav_search
   // 돋보기 눌렀을 때 검색창 나타나기
   $(".nav_search_icon").click(function () {
-    $(".nav_search").slideToggle();
-    $(".nav_gnb_respon_show").stop().slideUp(600);
+    $(".nav_search").stop().slideDown();
     // 돋보기 아이콘 눌렀을때 서브메뉴 닫기
+    $(".nav_gnb_respon_show").stop().slideUp(600);
+  });
+  // nav_cart
+  // 카트 아이콘 눌렀을 때 다른 메뉴 닫히기
+  $(".nav_cart_icon").click(function () {
+    $(".nav_search").stop().slideUp(600);
+    $(".nav_gnb_respon_show").stop().slideUp(600);
   });
 
   // menu
   $("nav ul.gnb").mouseenter(function () {
     $(this).find(".sub_menu").stop().slideDown(600);
-    $(".nav_search").stop().slideUp(600);
     // 주메뉴 버튼 마우스 오버시 열려있던 검색창 닫기
+    $(".nav_search").stop().slideUp(600);
   });
   $("nav ul.gnb").mouseleave(function () {
     $(this).find(".sub_menu").stop().slideUp(600);
+  });
+
+  // header의 다른 부분을 마우스 오버하면 열렸던 창들 slideUp
+  $("header").mouseenter(function () {
+    $(".nav_gnb_respon_show").stop().slideUp(600);
+    $(".nav_search").stop().slideUp(600);
   });
 
   // slide
@@ -72,17 +84,16 @@ $(function () {
 
 //line-product
 // swiper
-const swiper = new Swiper('.line_product .swiper', {
-  slidesPerView : 3,
-  spaceBetween : 0,
-  centeredSlides : true,
-  loop : true,
-  autoplay : {
-    delay : 5000
+const swiper = new Swiper(".line_product .swiper", {
+  slidesPerView: 3,
+  spaceBetween: 0,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 5000,
   },
-  navigation : {
-    prevEl : '.line_product .swiper-button-prev',
-    nextEl : '.line_product .swiper-button-next'
-  }
+  navigation: {
+    prevEl: ".line_product .swiper-button-prev",
+    nextEl: ".line_product .swiper-button-next",
+  },
 });
-// console.log(Swiper);
