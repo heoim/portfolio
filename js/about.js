@@ -18,11 +18,7 @@ $(function () {
 });
 
 $(function () {
-<<<<<<< HEAD
   //sub_menu
-=======
-  //top sub_menu
->>>>>>> 9ae7694501eefa052892ee4048c855f75cd1216c
   $("header .inner .main_menu li").mouseenter(function () {
     $(this).find(".sub_menu").stop().slideDown(600);
   });
@@ -30,11 +26,7 @@ $(function () {
     $(this).find(".sub_menu").stop().slideUp(600);
   });
 
-<<<<<<< HEAD
   // 반응형 menu
-=======
-  // 반응형 top menu
->>>>>>> 9ae7694501eefa052892ee4048c855f75cd1216c
   $("header .inner .resp").mouseenter(function () {
     // $('header .inner .resp .resp_menu').slideToggle();
     $(this).find(".resp_menu").stop().slideDown(600);
@@ -43,11 +35,7 @@ $(function () {
     $(this).find(".resp_menu").stop().slideUp(600);
   });
 
-<<<<<<< HEAD
   // 반응형 submenu 아코디언
-=======
-  // 반응형 top submenu 아코디언
->>>>>>> 9ae7694501eefa052892ee4048c855f75cd1216c
   $("header .inner .resp .resp_menu .resp_sub").mouseenter(function () {
     $(this).find(".resp_submenu").stop().slideDown(600);
   });
